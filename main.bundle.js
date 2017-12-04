@@ -173,7 +173,7 @@ var PackeryComponent = (function () {
                 _this.widgets.getValue()[index].draggie = draggie;
                 _this.packery.bindDraggabillyEvents(draggie);
             });
-            //window.dispatchEvent(new Event('resize'));
+            window.dispatchEvent(new Event('resize'));
             _this.packery.on('dragItemPositioned', function (item) {
                 var positions = _this.widgets.getValue().map(function (widget) {
                     var item = _this.packery.items.find(function (item) { return item.element == document.getElementById('graph-' + _this.widgets.getValue().indexOf(widget)); });
