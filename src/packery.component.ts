@@ -5,8 +5,6 @@ import * as Packery from 'packery';
 import * as Draggabilly from 'draggabilly';
 import { Widget } from './widget';
 
-declare const Modernizr: any;
-
 @Component({
     selector: 'ng-packery',
     templateUrl: 'packery.html',
