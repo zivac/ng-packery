@@ -8,6 +8,10 @@ Angular grid builder component
 * packery
 * draggabilly
 
+## Demo
+
+[https://zivac.github.io/ng-packery/](https://zivac.github.io/ng-packery/)
+
 ## Example
 
 ```javascript
