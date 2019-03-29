@@ -1,5 +1,5 @@
 {
-  "name": "ng-packery",
+  "name": "@zivac/ng-packery",
   "version": "1.0.0",
   "description": "Angular grid builder",
   "main": "index.js",
@@ -29,5 +29,6 @@
     "packery": "^2.1.1",
     "rxjs": "^6.3.3",
     "zone.js": "^0.8.26"
-  }
+  },
+  "devDependencies": {}
 }
