@@ -1,16 +1,11 @@
-export interface WidgetSize {
-    x: number;
-    y: number;
-}
-
 export class Widget {
 
     // draggabilly object (for drag and drop)
     draggie: any;
 
     // element size in grid(e.g. 2 x 2)
-    size: WidgetSize;
-    tempSize: WidgetSize;
+    size: [number, number];
+    tempSize: [number, number];;
 
     // document element id
     id: string;
@@ -22,9 +17,9 @@ export class Widget {
     index = 0;
     column = 0;
 
-    constructor(size?: WidgetSize) {
-        this.size = size ? size : {x: 1, y: 1};
-        this.tempSize = {x: this.size.x, y: this.size.y};
+    constructor(size?: [number, number]) {
+        this.size = size ? size : [1, 1];
+        this.tempSize = [this.size[0], this.size[1]];
     }
 
     // add implementation in extended classes if needed
@@ -32,8 +27,8 @@ export class Widget {
 
     // called when value is selected in size selector
     updateSize(): void {
-        this.size.x = this.tempSize.x;
-        this.size.y = this.tempSize.y;
+        this.size[0] = this.tempSize[0];
+        this.size[1] = this.tempSize[1];
         this.openSizeSelect = false;
     }
 

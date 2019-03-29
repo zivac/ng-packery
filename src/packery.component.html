@@ -2,7 +2,7 @@
   <div class="grid-sizer"></div>
   <div class="gutter-sizer"></div>
   <ng-container *ngFor="let widget of (widgets | async);let i = index">
-    <div class="widget width-{{widget.size.x}} height-{{widget.size.y}}" [ngStyle]="{'background-color': backgroundColor}" id="widget-{{i}}">
+    <div class="widget width-{{widget.size[0]}} height-{{widget.size[1]}}" [ngStyle]="{'background-color': backgroundColor}" id="widget-{{i}}">
       <div class="widget-title">
         {{widget.title}}
       </div>
@@ -23,9 +23,9 @@
       <div class="widget-size-select" *ngIf="widget.openSizeSelect">
         <div *ngFor="let y of sizes" class="widget-size-row">
           <div *ngFor="let x of sizes" class="widget-size-option"
-            [class.active]="widget.tempSize.x >= x && widget.tempSize.y >= y"
-            [class.inactive]="widget.size.x < x || widget.size.y < y" (mouseenter)="widget.tempSize = {x: x, y: y}"
-            (click)="setWidgetSize(widget, x, y)"></div>
+            [class.active]="widget.tempSize[0] >= x && widget.tempSize[1] >= y"
+            [class.inactive]="widget.size[0] < x || widget.size[1] < y" (mouseenter)="widget.tempSize = [x, y]"
+            (click)="setWidgetSize(widget)"></div>
         </div>
       </div>
     </div>
