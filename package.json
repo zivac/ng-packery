@@ -1,6 +1,6 @@
 {
   "name": "@zivac/ng-packery",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Angular grid builder",
   "main": "dist/index.js",
   "scripts": {
