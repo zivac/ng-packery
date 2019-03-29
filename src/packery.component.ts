@@ -7,8 +7,8 @@ import { Widget } from './widget';
 
 @Component({
     selector: 'ng-packery',
-    templateUrl: 'packery.component.html',
-    styleUrls: ['packery.component.css']
+    templateUrl: './packery.component.html',
+    styleUrls: ['./packery.component.css']
 })
 export class PackeryComponent implements OnInit, OnDestroy {
 
