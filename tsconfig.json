@@ -5,12 +5,13 @@
         "lib": [
             "es2018",
             "dom"
-          ]
+        ],
+        "outDir": "./dist"
     },
     "files": [
-        "src/index.ts"
-      ],
-      "exclude": [
+        "./src/index.ts"
+    ],
+    "exclude": [
         "node_modules"
-      ]
+    ]
 }
