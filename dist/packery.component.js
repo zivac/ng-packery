@@ -138,8 +138,8 @@ var PackeryComponent = /** @class */ (function () {
     PackeryComponent = __decorate([
         core_1.Component({
             selector: 'ng-packery',
-            templateUrl: 'packery.component.html',
-            styleUrls: ['packery.component.css']
+            templateUrl: './packery.component.html',
+            styleUrls: ['./packery.component.css']
         })
     ], PackeryComponent);
     return PackeryComponent;
