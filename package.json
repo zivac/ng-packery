@@ -23,10 +23,11 @@
   },
   "homepage": "https://github.com/zivac/ng-packery#readme",
   "dependencies": {
+    "@angular/common": "^7.2.11",
     "@angular/core": "^7.2.11",
     "draggabilly": "^2.1.1",
     "packery": "^2.1.1",
-    "rxjs": "^6.4.0",
-    "zone.js": "^0.8.29"
+    "rxjs": "^6.3.3",
+    "zone.js": "^0.8.26"
   }
 }

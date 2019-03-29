@@ -6,7 +6,7 @@ import * as Draggabilly from 'draggabilly';
 import { Widget } from './widget';
 
 @Component({
-    selector: 'app-packery',
+    selector: 'ng-packery',
     templateUrl: 'packery.component.html',
     styleUrls: ['packery.component.css']
 })
@@ -14,6 +14,9 @@ export class PackeryComponent implements OnInit, OnDestroy {
 
     @Input() widgets: BehaviorSubject<Widget[]>;
     @Input() widgetTpl: TemplateRef<any>;
+    @Input() backgroundColor = '#364450';
+    @Input() showSize = true;
+    @Input() showControls = true;
 
     @Output() edit: EventEmitter<Widget> = new EventEmitter();
     @Output() delete: EventEmitter<Widget> = new EventEmitter();
